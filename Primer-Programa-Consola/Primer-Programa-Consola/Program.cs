@@ -10,6 +10,14 @@
             // si queremos que la variable funcione dentro de console.write tenemos que poner el " $ "
             // adelante de las comillas y la variable dentro { __varible__ }
             Console.WriteLine($"Hello, {username}!");
+
+            Complex a = new Complex() { Real = 1, Imaginary = 2 };
+            Complex b = new Complex() { Real = 4, Imaginary = 8 };
+            //Console.WriteLine(a+" "+b);
+
+            Complex c = a + b;
+            Console.WriteLine("variable : "+c + " \nImaginario : " + c.Imaginary+ " \nreal : " + c.Real+" \nToString() : "+c.ToString());
+
         }
     }
 }
