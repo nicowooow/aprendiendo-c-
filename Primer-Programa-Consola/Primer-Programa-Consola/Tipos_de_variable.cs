@@ -30,5 +30,8 @@ que permite hacer saltos de lineas";
         // BOOLEAN
         bool boolean = false; // toma false o true
 
+        // ARRAYS
+        int[] arregloEnteros = new int[5] { 1,2,3,4,5};
+
     }
 }
