@@ -1,4 +1,6 @@
-﻿namespace Primer_Programa_Consola
+﻿using Primer_Programa_Consola.clase_generica;
+
+namespace Primer_Programa_Consola
 {
     internal class Program
     {
@@ -17,6 +19,19 @@
 
             Complex c = a + b;
             Console.WriteLine("variable : "+c + " \nImaginario : " + c.Imaginary+ " \nreal : " + c.Real+" \nToString() : "+c.ToString());
+
+
+            // vemos que la clase logar utiliza distintos tipos de datos como Mochila, Maleta, Paquete
+
+            Locker<Mochila> lockerA = new Locker<Mochila>(10, new Mochila());
+            Locker<Maleta> lockerB = new Locker<Maleta>(10, new Maleta());
+            Locker<Paquete> lockerC = new Locker<Paquete>(10, null);
+
+            Locker<int?> lockerEntero = new Locker<int?>(10, null);
+
+
+         
+
 
         }
     }
